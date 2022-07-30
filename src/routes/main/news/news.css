@@ -40,15 +40,18 @@
     font-size: 1vw;
     border: 0.5vw solid white;
     box-shadow: 4px 4px 22px -7px rgba(0, 0, 0, 0.75);
+    direction: rtl;
 }
 
 .text>h3 {
     padding-bottom: 1vh;
 }
 
-
 @media screen and (max-width: 550px) {
-    .rimon__news_container {
+    .rimon__news_container-wrapper{
+        display: none;
+    }
+    /* .rimon__news_container {
         display: flex;
         height: 80vh;
         width: 100vw;
@@ -66,6 +69,6 @@
     }
     .text{
         display: none;
-    }
+    } */
    
 }
