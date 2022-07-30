@@ -16,7 +16,7 @@
     margin-bottom: 2vh;
     flex-wrap: wrap;
     width: 100%;
-  
+
 }
 
 
@@ -39,23 +39,12 @@
 }
 
 @media screen and (max-width: 550px) {
-    .donors {
-        height: 80vh;
+
+    .donor,
+    .donor_logo {
+        width: 12vw;
+        filter: grayscale(100%);
+        transition: all 0.3s;
     }
 
-    .ourDonors {
-        flex-direction: column;
-    }
-
-    .donor {
-        flex: 1;
-        background: yellow;
-
-    }
-    .donor2 {
-        flex: 2;
-        background: yellow;
-
-    }
-    
 }
