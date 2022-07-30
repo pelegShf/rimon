@@ -1,0 +1,61 @@
+.donors {
+    height: 20vh;
+}
+
+.donors_title {
+    margin: 1vh 0 2vh 0;
+    font-weight: bold;
+    color: var(--color-main);
+}
+
+.ourDonors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+    flex-wrap: wrap;
+    width: 100%;
+  
+}
+
+
+
+.donor {
+    /* flex-basis: 100%; */
+    display: flex;
+
+}
+
+.donor_logo {
+    width: 5vw;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+}
+
+
+.donor_logo:hover {
+    filter: grayscale(0%);
+}
+
+@media screen and (max-width: 550px) {
+    .donors {
+        height: 80vh;
+    }
+
+    .ourDonors {
+        flex-direction: column;
+    }
+
+    .donor {
+        flex: 1;
+        background: yellow;
+
+    }
+    .donor2 {
+        flex: 2;
+        background: yellow;
+
+    }
+    
+}

@@ -1,0 +1,123 @@
+.footer {
+    background: var(--color-main);
+    border-top: 1px solid var(--color-secondary);
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.footer_logo {
+    height: 20vh;
+
+}
+
+.social_title {
+    color: white;
+}
+
+.social_icons_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid var(--color-secondary);
+    border-right: 2px solid var(--color-secondary);
+    height: 16vh;
+    width: 25vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+}
+
+.social_icons {
+    display: flex;
+    flex-direction: row;
+    width: 15vw;
+    height: 3vw;
+    justify-content: space-around;
+}
+
+.social {
+    font-size: 2vw;
+    color: var(--color-secondary);
+    transition: all 0.3s;
+}
+
+.social:hover {
+    font-size: 3vw;
+    color: var(--color-bg);
+}
+
+.website_directory,
+.misc {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    width: 20vw;
+    border-right: 2px solid var(--color-secondary);
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.copyrights {
+    color: white;
+    text-align: center;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.footer_link:hover {
+    color: var(--color-secondary);
+}
+
+@media screen and (max-width: 550px) {
+    .footer {
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+
+    .footer>div {
+        width: 90vw;
+    }
+
+    .social_icons {
+        display: flex;
+        flex-direction: row;
+        width: 60vw;
+        height: 10vw;
+        justify-content: space-around;
+    }
+
+    .social {
+        font-size: 9vw;
+        color: var(--color-secondary);
+        transition: all 0.3s;
+    }
+    
+
+    .social:hover {
+        font-size: 11vw;
+        color: var(--color-bg);
+    }
+
+    .website_directory,
+    .misc,
+    .social_icons_container {
+        border-bottom: 2px solid var(--color-secondary);
+        border-right: 0;
+        border-left: 0;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+
+
+
+    }
+
+}

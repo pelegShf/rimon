@@ -1,0 +1,39 @@
+.timeline{
+    background: var(--color-main);
+    height: 88vh;
+}
+
+.timelineTitle{
+    color: white;
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+h3,li{
+    direction: rtl;
+}
+ul{
+    direction: rtl;
+    list-style: square outside none;
+
+}
+.dates{
+    color: white;
+}
+
+@media screen and (max-width: 550px) {
+    .timeline{
+        background: var(--color-main);
+        height: 120vh;
+    }
+    .timelineTitle{
+        display: none;
+    }
+    .vertical-timeline-element-title{
+        font-size: 8vw;
+    }
+    .vertical-timeline-element-text{
+        font-size: 4vw;
+        padding-top: 1vh;
+    }
+}

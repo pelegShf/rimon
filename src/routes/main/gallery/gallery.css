@@ -1,0 +1,113 @@
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.slide {
+
+  background-size: 100vw 100%;
+  width: 100vw;
+  height: 100%;
+  background-repeat: no-repeat;
+
+}
+
+/* TODO: need to fix for pgone */
+.text_container {
+  position: absolute;
+  width: 30vw;
+  height: 20vh;
+  border-radius: 0.5vw;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  text-align: right;
+  padding: 1vw;
+}
+.slide_title{
+  padding-bottom: 1vh;
+  text-align: center;
+}
+#slide1 {
+  background-image: url("../../../assets/gallery/1.JPEG");
+}
+#text_container1 {
+  top: 10vh;
+  right: 5vw;
+}
+#slide2 {
+  background-image: url("../../../assets/gallery/2.jpeg");
+}
+#text_container2 {
+  bottom: 10vh;
+  left: 5vw;
+}
+
+#slide3 {
+  background-image: url("../../../assets/gallery/3.jpeg");
+}
+#text_container3 {
+  top: 10vh;
+  left: 5vw;
+}
+
+#slide4 {
+  background-image: url("../../../assets/gallery/4.JPG");
+}
+#text_container4 {
+  top: 10vh;
+  right: 35vw;
+}
+
+#slide5 {
+  background-image: url("../../../assets/gallery/5.jpeg");
+}
+#text_container5 {
+  bottom: 10vh;
+  right: 4vw;
+}
+
+#slide6 {
+  background-image: url("../../../assets/gallery/6.JPG");
+}
+#text_container6 {
+  bottom:8vh;
+  right: 45vw;
+}
+
+#slide7 {
+  background-image: url("../../../assets/gallery/7.JPG");
+}
+#text_container7 {
+  top: 10vh;
+  right: 5vw;
+}
+
+#slide8 {
+  background-image: url("../../../assets/gallery/8.JPG");
+}
+#text_container8 {
+  top: 10vh;
+  right: 5vw;
+}

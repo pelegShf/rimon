@@ -1,0 +1,40 @@
+.meetUs-container {
+    width: 33vw;
+    background: white;
+    direction: rtl;
+    padding: 4vw;
+}
+
+.meetUs-title {
+    padding-bottom: 2vh;
+}
+
+li > a {
+    padding-right: 2vw;
+    color: var(--color-main);
+}
+li > a:hover {
+    color: var(--color-secondary);
+}
+.contactList{
+    margin-top: 1vh;
+    font-size: 2vh;
+   
+}
+.icon{
+    color: var(--color-secondary);
+}
+.icon:hover{
+    color: var(--color-main);
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .meetUs-container {
+        width: 100vw;
+        height: 30vh;
+     
+    }
+    
+}

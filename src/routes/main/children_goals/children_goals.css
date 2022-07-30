@@ -1,0 +1,73 @@
+.goals_container {
+    background: #F4F4F9;
+    height: 38vh;
+}
+
+.childrenGoals {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+
+.goals_title {
+    margin: 0;
+    font-weight: bold;
+    color: var(--color-main);
+}
+
+.goalCard {
+    width: 23vw;
+    height: 35vh;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5vw;
+}
+
+.cardImg {
+    max-height: 20vh;
+    max-height: 20vh;
+    filter: grayscale(50%);
+    transition: all 0.3s;
+    border-radius: 5vw 5vw 0 0;
+}
+
+.goalCard:hover>.cardImg {
+    filter: grayscale(0%);
+}
+
+.card_title {
+    font-size: 3vh;
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .goals_container {
+        background: #F4F4F9;
+        height:165vh;
+    }
+    .childrenGoals {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        margin-top: 1vh;
+    }
+
+    .goalCard {
+        width: 90vw;
+        height: 46vh;
+        text-align: center;
+        border-radius: 5vw;
+    }
+
+    .cardImg {
+        max-height: 30vh;
+        max-height: 30vh;
+        filter: grayscale(50%);
+        transition: all 0.3s;
+        border-radius: 5vw 5vw 0 0;
+    }
+}

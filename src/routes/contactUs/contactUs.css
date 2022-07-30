@@ -1,0 +1,72 @@
+.rimon__contactUs-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+
+}
+
+.top_image-container {
+    height: 45vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+.top_image {
+    background-image: url('../../assets/contactUs/rows.JPG');
+    background-position: center;
+    background-size: cover;
+    transition: 0.7s all ;
+    width: 100%;
+    height: 100%;
+}
+
+.top_image-container:hover .top_image {
+    transform: scale(1.05);
+    background-position: center;
+
+}
+
+.bottom_info {
+    display: flex;
+    width: 100vw;
+    height: 45vh;
+}
+
+.map {
+    background: var(--color-main);
+    height: 45vh;
+    flex: 1;
+}
+
+.meetUs {
+    background: white;
+    height: 45vh;
+    flex: 1;
+
+}
+
+.etc {
+    background: #eaeaea;
+    height: 45vh;
+    flex: 1;
+
+}
+@media screen and (max-width: 700px) {
+  
+    .bottom_info {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 45vh;
+    }
+    .rimon__contactUs-container {
+        height: 90vh;
+    }
+    .top_image-container {
+        height: 30vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+}
+

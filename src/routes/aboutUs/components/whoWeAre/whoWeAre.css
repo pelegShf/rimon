@@ -1,0 +1,56 @@
+.main {
+  height: 91vh;
+  background-color: var(--color-bg);
+}
+
+.img-container {
+  width: 53.7vw;
+  height: 91vh;
+  float: right;
+  background: url('../../../../assets/bg2.jpg') no-repeat center center / cover;
+}
+
+h2 {
+  margin: 0;
+  direction: rtl;
+}
+
+.whoWeAreText {
+  padding: 10px;
+}
+
+.whoWeAreText>p {
+  padding-top: 20px;
+  direction: rtl;
+  font-size: 2vh;
+  line-height: 3vh;
+}
+@media screen and (min-width:991px) {
+  .img-container {
+  
+    -webkit-shape-outside: polygon(27% 0, 100% 0, 100% 100%, 0 100%);
+    shape-outside: polygon(27% 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(27% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(27% 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@media screen and (max-width:990px) {
+  .main {
+    height: 90vh;
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .img-container {
+    width: 100%;
+  }
+
+  .whoWeAreText>p {
+    direction: rtl;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+}
