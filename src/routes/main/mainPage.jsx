@@ -18,6 +18,7 @@ const Main = () => {
         <FarmTimeline />
         <Gallery />
         <Donors />
+        <News />
         {/* <Pictures /> */}
         <Footer />
       </div>

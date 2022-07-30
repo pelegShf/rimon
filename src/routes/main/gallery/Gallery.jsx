@@ -1,13 +1,4 @@
 import React from 'react';
-import FirstImage from '../../../assets/gallery/1.JPEG';
-import SecondImage from '../../../assets/gallery/2.jpeg';
-import ThirdImage from '../../../assets/gallery/3.jpeg';
-import FourthImage from '../../../assets/gallery/4.JPG';
-import FifthImage from '../../../assets/gallery/5.jpeg';
-import SixthImage from '../../../assets/gallery/6.JPG';
-import SeventhImage from '../../../assets/gallery/7.JPG';
-import EighthImage from '../../../assets/gallery/8.JPG';
-
 
 
 import './gallery.css';
