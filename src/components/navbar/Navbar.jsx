@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo_transp.png';
 import './navbar.css';
-import { Link, NavLink,useLocation   } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -19,85 +20,63 @@ const Navbar = () => {
     textDecoration: "underline",
   };
 
+  function toggleMenuFunc() {
+    setToggleMenu(!toggleMenu);
+  }
+
   let location = useLocation();
   return (
-    <div className="rimon__navbar">
+    <>
+      <BrowserView>
+        <div className="rimon__navbar">
+          {/*LOGO + LINKS*/}
+          <div className="rimon__navbar-links">
+            {/*Donate money button*/}
+            <div className="rimon__navbar-sign">
+              <button type="button">?רוצה לתרום</button>
+            </div>
+            {/*LINKS*/}
+            {/* main page */}
+            <div className="rimon__navbar-links_container">
+              <p><NavLink className='link' activeClassName="selected" to="/contactUs" >צור קשר</NavLink> </p>
+              <p><NavLink className='link' activeClassName="selected" to="/aboutUs">מי אנחנו</NavLink></p>
+            </div>
 
-      {/*LOGO + LINKS*/}
-      <div className="rimon__navbar-links">
-        {/*Donate money button*/}
-        <div className="rimon__navbar-sign">
-          <button type="button">?רוצה לתרום</button>
+          </div>
         </div>
-        {/*LINKS*/}
-        {/* main page */}
-       
-        {location.pathname == main && (
-          <div className="rimon__navbar-links_container">
-            <p><NavLink className='link' to="/contactUs" style={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }>צור קשר</NavLink> </p>
-            {/* <p><NavLink className='link' to="/activities" style={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }>מה קורה בחווה</NavLink></p> */}
-            <p><NavLink className='link' to="/aboutUs" style={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }>מי אנחנו</NavLink></p>
-          </div>
-        )}
-        {/* who we are page */}
-        {location.pathname == aboutUs && (
-          <div className="rimon__navbar-links_container">
-            <p><a href="#summary">תקציר מנהלים</a></p>
-            <p><a href="#directors">ועד מנהל</a></p>
-            <p><a href="#trustees">חבר נאמנים</a></p>
-            <p><a href="#staff">סגל החווה</a></p>
-          </div>
-        )}
-        {/* activites page */}
-        {location.pathname == activities && (
-          <div className="rimon__navbar-links_container">
-            <p><a href="#events">אירועים</a></p>
-            <p><a href="#workshops">סדנאות</a></p>
-            <p><a href="#gallery">גלריה</a></p>
-          </div>
-        )}
-        {/*contact Us page */}
-        {location.pathname == contactUs && (
-          <div className="rimon__navbar-links_container">
-            <p><a href="#visits">ביקורים</a></p>
-            <p><a href="#volunteering">התנדבות</a></p>
-            <p><a href="#service">שנה שירות ושירות לאומי</a></p>
-          </div>
-        )}
-      </div>
-      {/*LOGO*/}
-      <div className="rimon__navbar_logo-container">
-      <NavLink className='link' to="/" > <img src={logo} class="rimon__navbar_logo"/></NavLink>
-      </div>
-      <div className="rimon__navbar-menu">
 
-        {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
-        {/* TODO:  phone version for every page*/}
+      </BrowserView>
+      <MobileView>
+        <div className="rimon__navbar">
+          {/*LOGO*/}
+          <div className="rimon__navbar_logo-container">
+            <NavLink className='link' to="/" >
+              <img src={logo} class="rimon__navbar_logo" />
+            </NavLink>
+          </div>
+          <div className="rimon__navbar-menu">
+            {toggleMenu
+              ? <RiCloseLine color="#fff" size={27} onClick={() => toggleMenuFunc()} />
+              : <RiMenu3Line color="#fff" size={27} onClick={() => toggleMenuFunc()} />}
+            {/* TODO:  phone version for every page*/}
+
+          </div>
+        </div>
         {toggleMenu && (
-          <div className="rimon__navbar-menu_container scale-up-center">
+          <div className="rimon__navbar-menu_container">
             <div className="rimon__navbar-menu_container-links">
-              <p><a href="#home">Home</a></p>
-              <p><a href="#wrimon">What is rimon?</a></p>
-              <p><a href="#possibility">Open AI</a></p>
-              <p><a href="#features">Case Studies</a></p>
-              <p><a href="#blog">Library</a></p>
-            </div>
-            <div className="rimon__navbar-menu_container-links-sign">
-              <p>Sign in</p>
-              <button type="button">Sign up</button>
+              <p><NavLink className='link' to="/"    activeStyle={{ color: '#B0C15B' }}>דף הבית</NavLink></p>
+              <p><NavLink className='link' to="/aboutUs"   activeStyle={{ color: 'red' }} >מי אנחנו</NavLink></p>
+              <p><NavLink className='link' to="/contactUs"   activeStyle={{ color: '#B0C15B' }}>צור קשר</NavLink></p>
+              <p className='donate_mobile_link'><a href="#features" >רוצה לתרום?</a></p>
             </div>
           </div>
         )}
-      </div>
-    </div>
+      </MobileView>
+    </>
+
+
+
   );
 };
 

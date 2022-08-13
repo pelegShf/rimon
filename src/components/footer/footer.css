@@ -6,6 +6,8 @@
     flex-direction: row;
     align-items: center;
     overflow-x: hidden;
+    overflow-y: hidden;
+
 }
 
 .footer_logo {
