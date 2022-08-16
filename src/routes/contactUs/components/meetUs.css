@@ -36,5 +36,9 @@ li > a:hover {
         height: 30vh;
      
     }
+
+    .meetUs-title {
+        padding-bottom: 0.5vh;
+    }
     
 }

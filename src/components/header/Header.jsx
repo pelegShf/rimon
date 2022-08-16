@@ -16,13 +16,22 @@ const Header = () => {
         </div>
       </BrowserView>
       <MobileView>
+        <div className='rimon__header-mobile-container'></div>
         <div className='rimon__header-mobile'>
 
           <div className='backgroundImage_mobile'></div>
           <div className="textdiv_mobile">
             <h1>חווה חינוכית לנוער</h1>
             <p>.בשביל האדם. דרך האדמה</p>
+          </div>
 
+        </div>
+        <div className='details_mobile'>
+          <p className='farm_bluf'>
+            ׳חוות רימון׳ הינה מסגרת יום- מניעתית , אשר מטרתה לתת מענה חינוכי-טיפולי לבני נוער ללא מסגרת, המצויים במצבים של קושי נפשי ו/או רגשי ונמצאים בסיכון לקיום התנהגויות הרסניות
+          </p>
+          <div className="donate" onClick="location.href ='https://headstart.co.il/project/61596'">
+            <button type="button" >?רוצה לתרום</button>
           </div>
         </div>
       </MobileView>
