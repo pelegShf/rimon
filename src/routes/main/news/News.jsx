@@ -58,6 +58,7 @@ const News = () => {
               className='video item1'
               height="35vh"
               width="35vw"
+              origin= 'http://localhost:3000'
             />
           </div>
         </div>

@@ -119,11 +119,11 @@
 .donate {
     width: 100vw;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
-.donate button {
+.donate a {
+    text-align: center;
     padding: 0.5rem 2rem;
     color: var(--color-main);
     background: var(--color-secondary);
@@ -137,8 +137,6 @@
     cursor: pointer;
     width: 50vw;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    
-
 }
 
 @media screen and (max-width: 1050px) {
@@ -158,9 +156,6 @@
 
 /*Header for phones*/
 @media screen and (max-width: 550px) {
-
-
-
     #video {
         position: absolute;
         width: 400vw;
