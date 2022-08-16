@@ -1,11 +1,9 @@
-import React, { useRef, useEffect } from 'react'
-import { Pictures, Features, WhatRimon, Brand } from './routes/main';
-import { Donate, Footer, Header, Navbar } from './components';
+import React from 'react'
+import { Navbar } from './components';
 import {
   BrowserRouter,
   Routes,
   Route,
-  Outlet
 } from "react-router-dom";
 import AboutUs from "./routes/aboutUs/aboutUs";
 // import Activities from "./routes/activities/activities";
@@ -27,7 +25,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="aboutUs" element={<AboutUs />} />
-        {/* <Route path="activities" element={<Activities />} /> */}
         <Route path="contactUs" element={<ContactUs />} />
         <Route
           path="*"

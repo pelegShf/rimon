@@ -50,7 +50,7 @@
     cursor: pointer;
 }
 
-.rimon__navbar-sign button,
+.rimon__navbar-sign a,
 .rimon__navbar-menu_container button {
     padding: 0.5rem 2rem;
     color: #fff;
