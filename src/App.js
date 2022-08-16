@@ -1,5 +1,5 @@
-import React from 'react'
-import { Navbar } from './components';
+import React, { useState } from 'react'
+import { Footer, Navbar } from './components';
 import {
   BrowserRouter,
   Routes,
@@ -15,14 +15,21 @@ import './App.css';
 import './index.css';
 import Main from './routes/main/mainPage';
 
-const App = () => {
 
+const App = () => {
+  const [main, setMain] = useState(true);
+  const [aboutUs, setAboutUs] = useState(false);
+  const [contactUs, setContactUs] = useState(false);
   return (
     <BrowserRouter>
       <div className='gradient__bg'>
-        <Navbar />
+        <Navbar main={main} setMain={setMain} aboutUs={aboutUs} setAboutUs={setAboutUs} contactUs={contactUs} setContactUs={setContactUs} />
       </div>
-      <Routes>
+      {main && <Main />}
+      {aboutUs && <AboutUs />}
+      {contactUs && <ContactUs />}
+      <Footer />
+      {/* <Routes>
         <Route path="/" element={<Main />} />
         <Route path="aboutUs" element={<AboutUs />} />
         <Route path="contactUs" element={<ContactUs />} />
@@ -34,7 +41,7 @@ const App = () => {
             </main>
           }
         />
-      </Routes>
+      </Routes> */}
     </BrowserRouter>
   )
 }

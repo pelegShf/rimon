@@ -5,7 +5,7 @@ import logo from '../../assets/logo.png';
 import { BsFacebook, BsInstagram, BsYoutube, BsTwitter } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
 
-const Footer = () => {
+const Footer = ({setMain,setAboutUs,setContactUs}) => {
   return (
     <div className='footer'>
       <img className="footer_logo" src={logo} />
@@ -26,11 +26,12 @@ const Footer = () => {
           </a>
         </div>
       </div>
+    
       <div className='website_directory' >
-        <NavLink className='footer_link' to="/">דף הבית</NavLink>
-        <NavLink className='footer_link' to="/aboutUs">מי אנחנו</NavLink>
-        <NavLink className='footer_link' to="/activities">פעילויות החווה</NavLink>
-        <NavLink className='footer_link' to="/contactUs">צור קשר</NavLink>
+        <button className='footer_link'  activeStyle={{ color: '#B0C15B' }} onClick={() => {setContactUs(false);setMain(true);setAboutUs(false);}}>דף הבית</button>
+        <button className='footer_link' onClick={() => {;setContactUs(false);setMain(false);setAboutUs(true);}}>מי אנחנו</button>
+        {/* <button className='footer_link' to="/activities">פעילויות החווה</button> */}
+        <button className='footer_link' activeStyle={{ color: '#B0C15B' }} onClick={() => {setContactUs(true);setMain(false);setAboutUs(false);}}>צור קשר</button>
       </div>
       <div className='misc' >
         <a className='footer_link' href='' >דוחות כספים </a>

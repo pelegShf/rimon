@@ -5,17 +5,20 @@ import './navbar.css';
 import {  NavLink, useLocation } from 'react-router-dom';
 import { BrowserView, MobileView } from 'react-device-detect';
 
-const Navbar = () => {
+const Navbar = ({setMain,setAboutUs,setContactUs}) => {
   const [toggleMenu, setToggleMenu] = useState(false);
  
-  function toggleMenuFunc() {
+  function toggleMenuFunc(props) {
     setToggleMenu(!toggleMenu);
   }
+function toggleStates(){
 
+}
   let location = useLocation();
   return (
     <>
       <BrowserView>
+     
         <div className="rimon__navbar">
           {/*LOGO + LINKS*/}
           
@@ -27,8 +30,10 @@ const Navbar = () => {
             {/*LINKS*/}
             {/* main page */}
             <div className="rimon__navbar-links_container">
-              <p><NavLink className='link'  to="/contactUs" >צור קשר</NavLink> </p>
-              <p><NavLink className='link'  to="/aboutUs" >מי אנחנו</NavLink></p>
+              <p><button className='link'  onClick={() => {setContactUs(true);setMain(false);setAboutUs(false);}} >צור קשר</button> </p>
+              <p><button className='link'  onClick={() => {setContactUs(false);setMain(false);setAboutUs(true);}} >מי אנחנו</button> </p>
+
+              {/* <p><NavLink className='link'  to="/aboutUs" >מי אנחנו</NavLink></p> */}
             </div>
 
           </div>
@@ -59,9 +64,9 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="rimon__navbar-menu_container">
             <div className="rimon__navbar-menu_container-links">
-              <p><NavLink className='link' to="/"    activeStyle={{ color: '#B0C15B' }} onClick={() => setToggleMenu(false)}>דף הבית</NavLink></p>
-              <p><NavLink className='link' to="/aboutUs"   activeStyle={{ color: 'B0C15B' }} onClick={() => setToggleMenu(false)}>מי אנחנו</NavLink></p>
-              <p><NavLink className='link' to="/contactUs"   activeStyle={{ color: '#B0C15B' }} onClick={() => setToggleMenu(false)}>צור קשר</NavLink></p>
+              <p><button className='link' onClick={() => {setToggleMenu(false);setContactUs(false);setMain(true);setAboutUs(false);}}>דף הבית</button></p>
+              <p><button className='link' onClick={() => {setToggleMenu(false);setContactUs(false);setMain(false);setAboutUs(true);}}>מי אנחנו</button></p>
+              <p><button className='link' onClick={() => {setToggleMenu(false);setContactUs(true);setMain(false);setAboutUs(false);}}>צור קשר</button></p>
               <p className='donate_mobile_link'><a href="https://headstart.co.il/project/61596" onClick={() => setToggleMenu(false)}>רוצה לתרום?</a></p>
             </div>
           </div>

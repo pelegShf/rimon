@@ -26,6 +26,22 @@
     margin-left: 3rem;
 }
 
+.link {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.link:focus {
+    outline: none;
+    background: none;
+    border: none;
+}
+
 .link:hover {
     color: white;
 }
@@ -50,8 +66,7 @@
     cursor: pointer;
 }
 
-.rimon__navbar-sign a,
-.rimon__navbar-menu_container button {
+.rimon__navbar-sign a {
     padding: 0.5rem 2rem;
     color: #fff;
     background: var(--color-main);
@@ -82,7 +97,8 @@
 .rimon__navbar-menu_container-links-sign {
     display: none;
 }
-.donate_mobile_link{
+
+.donate_mobile_link {
     background: var(--color-secondary);
     width: 60vw;
     height: 7vh;
@@ -120,7 +136,8 @@
         padding: 0 5vw;
         justify-content: space-between;
     }
-    .selected{
+
+    .selected {
         color: var(--color-secondary);
     }
 
@@ -131,7 +148,7 @@
         justify-content: center;
         align-items: center;
     }
-  
+
 
     .rimon__navbar-menu_container {
         text-align: center;
@@ -141,11 +158,23 @@
         z-index: 1;
     }
 
-   .link:hover{
-    color: var(--color-secondary);
-   }
+    .link {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
 
-    .rimon__navbar-menu_container-links{
+    .link:hover {
+        color: var(--color-secondary);
+    }
+
+
+
+    .rimon__navbar-menu_container-links {
         width: 100%;
         display: flex;
         flex-direction: column;
