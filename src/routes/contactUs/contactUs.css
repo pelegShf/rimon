@@ -16,7 +16,7 @@
     background-image: url('../../assets/contactUs/rows.JPG');
     background-position: center;
     background-size: cover;
-    transition: 0.7s all ;
+    transition: 0.7s all;
     width: 100%;
     height: 100%;
 }
@@ -52,22 +52,37 @@
     flex: 1;
 
 }
+
 @media screen and (max-width: 700px) {
-  
+
     .bottom_info {
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 45vh;
+        height: 80vh;
     }
+
     .rimon__contactUs-container {
-        height: 115vh;
+        height: 120vh;
     }
+
     .top_image-container {
         height: 30vh;
         width: 100vw;
         overflow: hidden;
     }
-   
-}
 
+    .map {
+        height: 30vh;
+        
+    }
+
+    .meetUs {
+        height: 25vh;
+    }
+
+    .etc {
+        height: 25vh;
+    }
+
+}
