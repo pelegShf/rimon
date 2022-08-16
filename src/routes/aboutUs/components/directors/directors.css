@@ -118,4 +118,8 @@ p {
     #directors {
         margin-bottom: 0px !important;
     }
+    .directors{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }

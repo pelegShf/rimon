@@ -13,7 +13,7 @@ import { Col, Row } from 'react-bootstrap';
 const Directors = () => {
   return (
     <div className='directors__container'>
-      <Row className='gx-0 border-bottom'>
+      <Row className='gx-0 border-bottom directors'>
         <Col md={11}>
           <Row className="row trustees gx-0" >
             <MeetTheTeam portrait={Portarit} name="ניר אמיתי" role='מנכל וייזם החווה'  _class='directors'/>

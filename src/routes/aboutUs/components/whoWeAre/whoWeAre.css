@@ -37,7 +37,7 @@ h2 {
 
 @media screen and (max-width:990px) {
   .main {
-    height: 90vh;
+    height: 210vh;
     background-color: var(--color-bg);
     display: flex;
     flex-direction: column;
