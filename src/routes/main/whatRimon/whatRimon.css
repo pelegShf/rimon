@@ -42,9 +42,6 @@
   }
 
   @media screen and (max-width: 550px){
-    .rimon__whatrimon-container{
-      overflow-x: hidden;
-    }
     .rimon__whatrimon_trapezoid{
       border-bottom: 100px solid var(--color-bg);
       border-left: 30px solid transparent;

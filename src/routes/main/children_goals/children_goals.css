@@ -1,7 +1,6 @@
 .goals_container {
     background: #F4F4F9;
     height: 38vh;
-  
 }
 
 .childrenGoals {
@@ -47,7 +46,6 @@
     .goals_container {
         background: #F4F4F9;
         height:165vh;
-        overflow-x: hidden;
     }
     .childrenGoals {
         display: flex;
