@@ -50,6 +50,7 @@ h3 {
     height: 72vh;
     justify-content: space-between;
     padding: 0;
+    overflow-x: hidden;
   }
 
   .mobile_col {

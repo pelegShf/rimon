@@ -25,6 +25,7 @@ ul{
     .timeline{
         background: var(--color-main);
         height: 120vh;
+        overflow-x: hidden;
     }
     .timelineTitle{
         display: none;

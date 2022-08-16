@@ -45,6 +45,102 @@
     left: 0;
 }
 
+.backgroundImage_mobile {
+    /* The image used */
+    background-image: url("../../assets/mobileHeader.JPG");
+
+    /* Add the blur effect */
+    filter: brightness(80%) blur(0.5vw);
+    /* Full height */
+    height: 50vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.textdiv_mobile {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+
+    font-weight: bold;
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 2vw;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: start;
+    justify-self: start;
+}
+
+.rimon__header-mobile {
+    display: grid;
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    overflow: hidden;
+    background-size: cover;
+
+
+}
+
+.textdiv_mobile>p {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: var(--color-secondary);
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.details_mobile{
+    height: 32vh;
+
+}
+.farm_bluf {
+    direction: rtl;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 2.5vh;
+    font-weight: lighter;
+    padding: 1vw 3vw 0vw 3vw;
+}
+
+.donate {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.donate button {
+    padding: 0.5rem 2rem;
+    color: var(--color-main);
+    background: var(--color-secondary);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 4vw;
+    line-height: 8vw;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 50vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    
+
+}
+
 @media screen and (max-width: 1050px) {
     #video {
         display: flex;
@@ -62,12 +158,8 @@
 
 /*Header for phones*/
 @media screen and (max-width: 550px) {
-    .rimon__header {
-        width: 100%;
-        height: 91vh;
-        margin: 0;
-        overflow: hidden
-    }
+
+
 
     #video {
         position: absolute;

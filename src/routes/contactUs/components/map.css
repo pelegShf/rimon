@@ -1,8 +1,14 @@
 .mapDiv{
     height: 45vh;
      width: 33vw;
-     background: red;
+    
 }
+.marker{
+  color: black;
+
+  }
+  
+
 @media screen and (max-width: 700px) {
     .mapDiv{
         height: 30vh;
