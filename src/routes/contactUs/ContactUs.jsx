@@ -18,7 +18,7 @@ const ContactUs = () => {
           <Etc className='etc' />
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
 
   )

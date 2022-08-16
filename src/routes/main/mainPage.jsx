@@ -20,7 +20,7 @@ const Main = () => {
         <Donors />
         <News />
         {/* <Pictures /> */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   )
