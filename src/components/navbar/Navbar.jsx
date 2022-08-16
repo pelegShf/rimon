@@ -38,9 +38,7 @@ function toggleStates(){
 
           </div>
           <div className="rimon__navbar_logo-container">
-            <NavLink className='link' to="/" >
-              <img src={logo} className="rimon__navbar_logo" alt="logo" />
-            </NavLink>
+              <img src={logo} className="rimon__navbar_logo" alt="logo" onClick={() => {setContactUs(false);setMain(true);setAboutUs(false);}}/>
           </div>
         </div>
 
@@ -49,9 +47,9 @@ function toggleStates(){
         <div className="rimon__navbar">
           {/*LOGO*/}
           <div className="rimon__navbar_logo-container">
-            <NavLink className='link' to="/" >
-              <img src={logo} className="rimon__navbar_logo" alt="logo"  />
-            </NavLink>
+            {/* <NavLink className='link' to="/" > */}
+              <img src={logo} className="rimon__navbar_logo" alt="logo" onClick={() => {setContactUs(false);setMain(true);setAboutUs(false);}} />
+            {/* </NavLink> */}
           </div>
           <div className="rimon__navbar-menu">
             {toggleMenu
