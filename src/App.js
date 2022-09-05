@@ -28,7 +28,7 @@ const App = () => {
       {main && <Main />}
       {aboutUs && <AboutUs />}
       {contactUs && <ContactUs />}
-      <Footer />
+      <Footer  main={main} setMain={setMain} aboutUs={aboutUs} setAboutUs={setAboutUs} contactUs={contactUs} setContactUs={setContactUs} />
       {/* <Routes>
         <Route path="/" element={<Main />} />
         <Route path="aboutUs" element={<AboutUs />} />

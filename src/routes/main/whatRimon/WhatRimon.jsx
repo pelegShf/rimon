@@ -11,14 +11,15 @@ const WhatRimon = () => {
           <p className='rimon__whatrimon_trapezoid-text'>
             <span>  טיפול אישי וקבוצתי </span>
             לשיפור וחיזוק הבטחון העצמי
-            , הכישורים והקשרים החברתיים של הנעריים.</p>
+            , הכישורים והקשרים החברתיים של הנערים.
+            </p>
         </div>
    
         <div data-aos="fade-left" data-aos-duration="700" className='rimon__whatrimon_trapezoid' id="rimon__whatrimon_trapezoid2">
           <p className='rimon__whatrimon_trapezoid-text'>
             <span>  חיבור לאדמה ולמרחב הפתוח </span>
             תוך השתלבות
-            בצוות אורגני, אשר מסייע להם להיות קשובים
+            בצוות אורגני, אשר מסייע לנערים ונערות להיות קשובים
             לעצמם ולסביבתם. בנוסף להגברת תחושת
             השייכות, האחריות והמסוגלות.
           </p>

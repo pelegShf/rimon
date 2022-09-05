@@ -15,7 +15,7 @@ const Features = () => {
         <div className='rimon__features-card'>
           <img src={recycle} />
           <h3>קיימות (0 פסולת)</h3>
-          <p>מיחזור, בניה אקולוגית, קומפוסט, אגירת נגר עלי. חשמל סולארי, ביו גז</p>
+          <p>מיחזור, בניה אקולוגית, קומפוסט, אגירת נגר עלי, חשמל סולארי, ביו גז</p>
         </div>
         <div className='rimon__features-card'>
           <img src={wheat} />

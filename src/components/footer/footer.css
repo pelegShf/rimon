@@ -60,9 +60,20 @@
     color: white;
     text-align: center;
     width: 20vw;
+    height: 16vh;
+    vertical-align: middle;
+   
     border-right: 2px solid var(--color-secondary);
     padding-right: 5vw;
     padding-left: 5vw;
+}
+.misc > p{
+    margin: auto;
+}
+
+.website_directory > button{
+    margin: auto;
+
 }
 
 .copyrights {
