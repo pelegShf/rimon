@@ -8,9 +8,9 @@ const AboutUs = () => {
   return (
   <div>
     <WhoWeAre />
-    <Directors />
+    {/* <Directors />
     <Trustees />
-    <Staff />
+    <Staff /> */}
   </div>
   )
 }
