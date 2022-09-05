@@ -21,8 +21,7 @@ const Gallery = () => {
             slidesPerView={1}
             centeredSlides={true}
             autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
+                delay: 5000,
             }}
             navigation={true}
             pagination={{ clickable: true }}

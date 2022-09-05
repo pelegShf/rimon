@@ -12,7 +12,7 @@ const FarmTimeline = () => {
     return (
         <div className='timeline' >
             <h2 className='center timelineTitle'>יעדי החווה</h2>
-            <VerticalTimeline >
+            <VerticalTimeline className='verticalTimeline' >
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#fff', color: 'black' }}
@@ -24,17 +24,29 @@ const FarmTimeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">יעדים לטווח הקרוב</h3>
                     <ul>
-                        <li className="vertical-timeline-element-text">
-                            1) התמדה במסגרת העבודה בחווה לתקופת זמן שהוגדרה בתחילת התהליך.
+                        <li className='liText'>
+                            <div>•</div>
+                            <div className="vertical-timeline-element-text">
+                                התמדה במסגרת העבודה בחווה לתקופת זמן שהוגדרה בתחילת התהליך
+                            </div>
                         </li>
-                        <li className="vertical-timeline-element-text">
-                           2) מוגנות- הפסקה של התנהגויות עוברות חוק ומסכנות חיים
+                        <li className='liText'>
+                            <div>•</div>
+                            <div className="vertical-timeline-element-text">
+                                מוגנות- הפסקה של התנהגויות עוברות חוק ומסכנות חיים
+                            </div>
                         </li>
-                        <li className="vertical-timeline-element-text">
-                           3) דיווח של 80% מהנערים על עליה בתחושת המסוגלות, השייכות והחוסן
+                        <li className='liText'>
+                            <div>•</div>
+                            <div className="vertical-timeline-element-text">
+                                דיווח של 80% מהנערים על עליה בתחושת המסוגלות, השייכות והחוסן
+                            </div>
                         </li>
-                        <li className="vertical-timeline-element-text">
-                          4) 80% מהנערים מסוגלים להתנהל כלכלית באופן עצמאי ואחראי כעבור שנה מתחילת התהליך
+                        <li className='liText'>
+                            <div>•</div>
+                            <div className="vertical-timeline-element-text">
+                                80% מהנערים מסוגלים להתנהל כלכלית באופן עצמאי ואחראי כעבור שנה מתחילת התהליך
+                            </div>
                         </li>
                     </ul>
                 </VerticalTimelineElement>
@@ -49,12 +61,18 @@ const FarmTimeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">יעדים לטווח הביניים</h3>
                     <ul>
-                        <li className="vertical-timeline-element-text">
-                      1) גיוס של 70% מהנערים לשירות צבאי או לאומי. 70% מהם מסיימים בהצלחה שנה ראשונה
+                        <li className='liText'>
+                            <div>•</div>
+                            <div className="vertical-timeline-element-text">
+                                גיוס של 70% מהנערים לשירות צבאי או לאומי. 70% מהם מסיימים בהצלחה שנה ראשונה
+                            </div>
                         </li>
-                        <li className="vertical-timeline-element-text">
-                      2) 70% מהנערים מחזיקים במסגרות תעסוקתיות במשך שנה לפחות
+                        <li className='liText'>
+                            <div>•</div>
+                            <div className="vertical-timeline-element-text">
+                                70% מהנערים מחזיקים במסגרות תעסוקתיות במשך שנה לפחות
 
+                            </div>
                         </li>
                     </ul>
                 </VerticalTimelineElement>
@@ -69,7 +87,12 @@ const FarmTimeline = () => {
                 >
                     <h3 className="vertical-timeline-element-title">יעדים לטווח הרחוק</h3>
                     <ul className="vertical-timeline-element-text">
-                      1)  70% מבוגרי התוכנית יימצאו מחוץ למעגל העוני/פשיעה תוך 5 שנים מסיום התוכנית
+                        <li className='liText'>
+                            <div>•</div>
+                            <div>
+                                70% מבוגרי התוכנית יימצאו מחוץ למעגל העוני/פשיעה תוך 5 שנים מסיום התוכנית
+                            </div>
+                        </li>
                     </ul>
                 </VerticalTimelineElement>
             </VerticalTimeline>

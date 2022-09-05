@@ -22,7 +22,7 @@ const Header = () => {
           <div className='backgroundImage_mobile'></div>
           <div className="textdiv_mobile">
             <h1>חווה חינוכית לנוער</h1>
-            <p>.בשביל האדם. דרך האדמה</p>
+            <p>.בשביל האדם. בדרך האדמה</p>
           </div>
 
         </div>

@@ -1,6 +1,6 @@
 .timeline{
     background: var(--color-main);
-    height: 88vh;
+    height: wrap;
 }
 
 .timelineTitle{
@@ -9,14 +9,23 @@
     margin-bottom: 1vh;
 }
 
+ul{
+    direction: rtl;
+    list-style-type: disc;
+}
 h3,li{
     direction: rtl;
 }
-ul{
-    direction: rtl;
-    list-style: square outside none;
 
+.liText{
+    list-style: inside;
+    display: flex;
 }
+
+.liText > div{
+    margin-left: 1vw;
+}
+
 .dates{
     color: white;
 }

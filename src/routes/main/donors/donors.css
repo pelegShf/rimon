@@ -1,5 +1,6 @@
 .donors {
     height: 20vh;
+    width: 30vw;
 }
 
 .donors_title {
@@ -24,11 +25,10 @@
 .donor {
     /* flex-basis: 100%; */
     display: flex;
-
 }
 
 .donor_logo {
-    width: 5vw;
+    width: 6vw;
     filter: grayscale(100%);
     transition: all 0.3s;
 }
