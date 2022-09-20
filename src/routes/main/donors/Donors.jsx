@@ -21,6 +21,7 @@ const Donors = () => {
             <div className="ourDonors">
                 <div className="donor">
                     <img className="donor_logo" src={meshek} />
+                    <p> משקי <b>הנגב</b> </p>
                 </div>
                 <div className="donor">
                     <img className="donor_logo" src={seach} />

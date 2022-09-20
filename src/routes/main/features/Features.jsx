@@ -29,7 +29,7 @@ const Features = () => {
         <div className='rimon__features-card'>
           <img src={tree} />
           <h3>רוגע ואסתטיקה</h3>
-          <p>קבילה פינות חמד ושבילים</p>
+          <p>קהילה. פינות חמד ושבילים</p>
         </div>
 
         <div className='rimon__features-card'>
