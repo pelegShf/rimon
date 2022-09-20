@@ -21,7 +21,7 @@ const Gallery = () => {
             slidesPerView={1}
             centeredSlides={true}
             autoplay={{
-                delay: 5000,
+                delay: 4200,
             }}
             navigation={true}
             pagination={{ clickable: true }}
@@ -50,7 +50,7 @@ const Gallery = () => {
                     <div className='text_container' id='text_container3'>
 
                         <h2 className='slide_title'>היום יום בחווה</h2>
-                        <p>.אין דבר יותר מספק משקיעה יפה אחרי יום מלא עשייה בחקלאות</p>
+                        <p>אין דבר יותר מספק משקיעה יפה אחרי יום מלא עשייה בחקלאות</p>
                     </div>
                 </div>
             </SwiperSlide>
@@ -58,7 +58,7 @@ const Gallery = () => {
                 <div className='slide' id='slide4'>
                     <div className='text_container' id='text_container4'>
                         <h2 className='slide_title'>התנדבות בחווה</h2>
-                        <p>מכינת ?? באו ליום שלם של התנדבות. התחלנו בשעות המוקדמות בעבודה בשטח - שתלנו, קטפנו, והכנו תשתיות. בשעות החמות עברנו לכיתה וניהלנו שיח על ציונות, התנדבות ומה שבניהם.</p>
+                        <p>המכיניסטים באו ליום שלם של התנדבות. התחלנו בשעות המוקדמות בעבודה בשטח - שתלנו, קטפנו, והכנו תשתיות. בשעות החמות עברנו לכיתה וניהלנו שיח על ציונות, התנדבות ומה שבניהם.</p>
                     </div>
                 </div>
             </SwiperSlide>
